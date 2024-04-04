@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>News Ticker</title>
+<style>
+  body { font-family: Arial, sans-serif; }
+  .ticker-wrapper {
+    overflow: hidden;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+  }
+  .ticker-move {
+    white-space: nowrap;
+    display: block;
+    animation: ticker 10s linear infinite;
+  }
+  @keyframes ticker {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+  }
+</style>
+</head>
+<body>
+<div class="ticker-wrapper">
+  <span class="ticker-move">This is your scrolling news ticker text. Add more news items here separated by. | .</span>
+</div>
+</body>
+</html>
